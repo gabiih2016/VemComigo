@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/entre.css"/>
+        <script src="js/val_entre.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="form_box">
+                <h2>Formulário de cadastro</h2>
+
+                <form action="concluido_2.html">
+
+                    <div class="f_line">
+                        <span>
+                            <label> Email </label>
+                            <input type="email" id="i_email" required/>
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <label> Senha </label>
+                            <input type="password" id="i_senha" required/>
+                        </span>
+
+                    <div class="f_line">
+                        <span>
+                            <input type="submit" onclick="validacao()" value="Cadastrar" id="btt_form"/>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

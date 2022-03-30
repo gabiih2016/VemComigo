@@ -1,0 +1,142 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    background-color: #7661C7;
+}
+
+#logo_bar{
+    padding: 50px;
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/*Estilo menu*/
+
+.menu{
+    overflow: hidden;
+    background-color: #198699;
+    border-top: 5px solid black;
+}
+
+.menu a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .btt_drop{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.content{
+    display: none;
+    position: absolute;
+    background-color: #3A7AA8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+}
+
+.content a{
+    float: none;
+    color: white;
+    padding: 14px 16px;
+    display: block;
+    text-align: left;
+}
+
+.menu a:hover, .dropdown:hover .btt_drop:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.content a:hover{
+    background-color: white;
+    color: black;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.menu .menu_btt{
+    display: none;
+}
+
+/*Esconde as opções do menu e ativa o botão para o menu responsivo*/
+
+@media screen and (max-width: 600px){
+    .menu a, .dropdown .btt_drop{
+        display: none;
+    }
+
+    .menu .menu_btt{
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #header{
+        text-align: center;
+    }
+
+    #logo_bar{
+        padding: 20px;
+        font-size: 25px;
+    }
+    
+    .menu.responsive{
+        position: relative;
+    }
+
+    .menu.responsive a.menu_btt{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive a{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .menu.responsive .dropdown{
+        float: none;
+    }
+
+    .menu.responsive .content{
+        position: relative;
+    }
+
+    .menu.responsive .dropdown .btt_drop{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

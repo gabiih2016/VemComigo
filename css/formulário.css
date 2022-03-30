@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body{
+    font-family: 'Staatliches', cursive;
+    background-image: linear-gradient(to right, #3A7AA8, #198699, #5A6DB7, #9155D4, #7661C7);
+    padding: 10px;
+    margin: 0px;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#form_box{
+    margin: auto;
+    background-color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2{
+    color: #9155D4;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.f_line #i_nome, #i_genero, #i_email{
+    width: 350px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.f_line #i_data, #i_tele, #i_uf, #i_cidade, #i_senha, #i_conf_senha{
+    width: 164px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#btt_form{
+    width: 350px;
+    height: 30px;
+    border: 1px solid #198699;
+    border-radius: 5px;
+    background-color: #9155D4;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btt_form:hover{
+    transition: 0.3s;
+    background-color: #198699;
+    cursor: pointer;
+}
+
+.f_line{
+    display: flex;
+}
+
+.f_line span{
+    padding: 10px;
+    color: #5A6DB7;
+}
+
+.f_line label{
+    color: white;
+    display: block;
+    padding-bottom: 10px;
+}
+
+#end_box{
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#end_box h3{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
